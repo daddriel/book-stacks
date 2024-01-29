@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="/src/layers.png">
+  <title>Book Stacks</title>
+</head>
+<body class="h-screen flex items-center">
+  <div class="container mx-auto">
+    <img src="src/layers.png" alt="stacks" class="w-12 block mx-auto">
+    <h1 class=" text-blue-950 font-bold text-4xl text-center" >Book Stacks</h1>
+    
+    <div class="m-10">
+      <label for="book" class="text-blue-600 text-sm mx-auto block w-full sm:w-80">Book Name</label>
+      <input id="book" type="text" placeholder="Please enter the book name" class="border border-blue-600 rounded-md 
+      mb-6 p-2 mx-auto block w-full sm:w-80 focus-visible:outline-blue-600">
+      <div class="flex flex-col gap-5">
+        <button id="add" class="bg-blue-600 text-white rounded-md p-2 mx-auto block w-full sm:w-80 hover:shadow-md">
+          <img src="src/cart-plus-solid.svg" alt="icon add book" class="h-5 inline-block"> Add Book
+        </button>
+        <button id="remove" class="bg-rose-600 text-white rounded-md p-2 mx-auto block w-full sm:w-80 hover:shadow-md">
+          <img src="src/trash-solid.svg" alt="icon add book" class="h-5 inline-block"> Remove Book
+      </button>
+      </div> 
+    </div>
+    <div>
+     
+      <h2 class="text-blue-950 font-normal text-2xl text-center">List Books</h2>
+      <span id="list-state" class="block text-center text-blue-500 font-normal text-xs"></span>
+      <ul id="list-books" class="block w-52 mx-auto list-inside font-light text-gray-600 text-sm" >
+      </ul>
+    </div>
+  </div>
+  
+  <script src="main.js"></script>
+</body>
+</html>
